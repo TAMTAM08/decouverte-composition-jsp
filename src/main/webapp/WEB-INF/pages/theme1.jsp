@@ -4,22 +4,10 @@
 
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="description" content="Description de la page 1">
         <title>Thème 1</title>
-        <link rel="stylesheet" type="text/css" href="styles/style.css" />
     </head>
     <body>
-        <div id="bodyWrapper">
-            <jsp:include page="/WEB-INF/fragments/header.jspf" />
-            <jsp:include page="/WEB-INF/fragments/navigation.jspf" />
-            <div id="pageBody">
-                <jsp:include page="/WEB-INF/fragments/sidebar.jspf" />
-                <div id="content">
-                    La page du thème 1
-                </div>
-            </div>
-           	<jsp:include page="/WEB-INF/fragments/footer.jspf" />
-        </div>
+		La page du thème 1
     </body>
 </html>

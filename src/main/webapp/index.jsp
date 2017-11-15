@@ -4,22 +4,11 @@
 
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="description" content="Description de la page d'accueil">
         <title>Ma page d'accueil</title>
         <link rel="stylesheet" type="text/css" href="styles/style.css" />
     </head>
     <body>
-        <div id="bodyWrapper">
-            <jsp:include page="/WEB-INF/fragments/header.jspf" />
-            <jsp:include page="/WEB-INF/fragments/navigation.jspf" />
-            <div id="pageBody">
-                <jsp:include page="/WEB-INF/fragments/sidebar.jspf" />
-                <div id="content">
-                    Ceci est ma page d'accueil
-                </div>
-            </div>
-            <jsp:include page="/WEB-INF/fragments/footer.jspf" />
-        </div>
+    	Ceci est ma page d'accueil
     </body>
 </html>
