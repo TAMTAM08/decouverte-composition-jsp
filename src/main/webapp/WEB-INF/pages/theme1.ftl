@@ -1,24 +1,13 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+<#include "/WEB-INF/templates/base.ftl">
 
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Description de la page 1">
-        <title>Thème 1</title>
-        <link rel="stylesheet" type="text/css" href="styles/style.css" />
-    </head>
-    <body>
-        <div id="bodyWrapper">
-        	<#include "/WEB-INF/fragments/header.ftl">
-            <#include "/WEB-INF/fragments/navigation.ftl">
-            <div id="pageBody">
-                <#include "/WEB-INF/fragments/sidebar.ftl">
-                <div id="content">
-                    La page du thème 1
-                </div>
-            </div>
-            <#include "/WEB-INF/fragments/footer.ftl">
-        </div>
-    </body>
-</html>
+<#macro page_head>
+  	<@common_page_head/>
+	<meta name="description" content="Description de la page 1">
+    <title>Thème 1</title>
+</#macro>
+
+<#macro page_body>
+	La page du thème 1
+</#macro>
+
+<@display_page/>
