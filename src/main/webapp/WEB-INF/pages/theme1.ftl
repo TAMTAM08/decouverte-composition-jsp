@@ -1,4 +1,3 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -11,15 +10,15 @@
     </head>
     <body>
         <div id="bodyWrapper">
-            <jsp:include page="/WEB-INF/fragments/header.jspf" />
-            <jsp:include page="/WEB-INF/fragments/navigation.jspf" />
+        	<#include "/WEB-INF/fragments/header.ftl">
+            <#include "/WEB-INF/fragments/navigation.ftl">
             <div id="pageBody">
-                <jsp:include page="/WEB-INF/fragments/sidebar.jspf" />
+                <#include "/WEB-INF/fragments/sidebar.ftl">
                 <div id="content">
                     La page du thème 1
                 </div>
             </div>
-           	<jsp:include page="/WEB-INF/fragments/footer.jspf" />
+            <#include "/WEB-INF/fragments/footer.ftl">
         </div>
     </body>
 </html>

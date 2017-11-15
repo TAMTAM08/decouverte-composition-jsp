@@ -22,12 +22,12 @@ public class Router extends HttpServlet {
 	private String getViewPath(String path) {
 		switch (path) {
 		case "/theme1.do":
-			return "WEB-INF/pages/theme1.jsp";
+			return "WEB-INF/pages/theme1.ftl";
 		case "/theme2.do":
-			return "WEB-INF/pages/theme2.jsp";
+			return "WEB-INF/pages/theme2.ftl";
 		case "/home.do":
 		default:
-			return "index.jsp";
+			return "index.ftl";
 		}
 	}
 }
